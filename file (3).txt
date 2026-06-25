@@ -1,0 +1,133 @@
+{set:i|{replace:"||{args}}}
+{if:{get:i}|=|g major 91|then:
+fahhhh
+{mediascript:
+load {iv} m
+swaprgba m bgra
+hueshifthsv m 180
+haah m
+distort m resize 512 512
+rotate m -90
+distort m arc 30 90
+contain m 640 512
+distort m bilinear_forward 88 70 -116 -74 60 303 -48 395 550 30 642 -24 553 382 642 368
+distort m resize 1280 720
+copy m p1
+audiopitch p1 2**(1/12)
+audiopitch m 2**(0/12)
+audioputmix m p1
+render m
+}
+}
+{if:{get:i}|=|g major 89|then:
+"copy and paste" ahh💔🥀
+{mediascript:
+load {iv} m
+hueshifthsv m 180
+haah m
+distort m resize 512 512
+rotate m -90
+distort m arc 30 90
+contain m 640 512
+distort m bilinear_forward 88 70 -116 -74 60 303 -48 395 550 30 642 -24 553 382 642 368
+distort m resize 1280 720
+flop m
+copy m p1
+audiopitch p1 2**(-24/12)
+audiopitch m 2**(-23/12)
+audioputmix m p1
+render m
+}
+}
+{if:{get:i}|=|blurred pastel wrinkles|then:
+polish
+{mediascript:
+load {iv} m
+blur m 17
+detunnel m
+wiggle m right 30 4
+tunnel m
+audiopitch m 2**(-5.70102/12)
+render m
+}
+}
+{if:{get:i}|=|nameless effect 2.0|then:
+so peak🥹✌🏻
+{mediascript:
+load {iv} m
+get m width w 
+get m height h 
+get m duration d
+wiggle m left 11 4
+wiggle m right 11 4
+wiggle m up 11 4
+wiggle m down 11 4
+audiopitch m 2**(-12/12)
+audiopitch m 2**(-12/12)
+audiopitch m 2**(12/12) 
+audiopitch m 2**(12/12)  
+volume m 1.5
+render m
+}
+}
+{if:{get:i}|=|p major|then:
+avs effect 😂✌🏻
+{mediascript:
+load {iv} m
+hueshifthsv m 180
+invert m
+rotate m -90
+waves m
+rotate m 90
+copy m p1
+audiopitch p1 2**(4/12)
+audiopitch m 2**(-6/12)
+audioputmix m p1
+render m
+}
+}
+{if:{get:i}|=|not scary|then:
+same as p major 😂✌🏻
+{mediascript:
+load {iv} m
+waaw m
+hueshifthsv m 180 100
+rotate m -90
+waves m
+rotate m 90
+audiopitch m 2**(-2.5/12)
+render m
+}
+}
+{if:{get:i}|=|91-dxi|then:
+best effect for ihtx
+{mediascript:
+load {iv} m
+hueshifthsv m 50 115
+invert m
+shake m 0 15 true
+copy m p1
+audiopitch p1 2**(-3.5/12)
+audiopitch m 2**(0/12)
+audioputmix m p1
+render m
+}
+}
+{if:{get:i}|=|dxi|then:
+the first one 🥹✌🏻
+{mediascript:
+load {iv} m
+hueshifthsv m 26.939 110
+invert m
+shake m 0 10 true
+swirl m -10
+copy m p1
+copy m p2
+audiopitch m 2**(0.15/12)
+audiopitch p1 2**(-6.85/12)
+audiopitch p2 2**(7.15/12)
+audioputmix m p2
+audioputmix m p1
+render m
+}
+}

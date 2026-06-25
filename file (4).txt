@@ -134,6 +134,7 @@ render m
 {if:{get:i}|=|g major 17|then:
 equalizer, btw requested by: @obltot671 on my server!
 {mediascript:
+load {iv} m
 hueshifthsv m -90
 haah m
 explode m 0.7

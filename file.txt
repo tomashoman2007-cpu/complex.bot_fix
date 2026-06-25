@@ -106,7 +106,7 @@ load {iv} m
 hueshifthsv m 50 115
 invert m
 rotate m 90
-shake m 15
+shake m 0 15 true
 rotate m -90
 copy m p1
 audiopitch p1 2**(-3.5/12)
